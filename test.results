@@ -1,0 +1,56 @@
+Calculator.java
+4 dodati privatni konstruktor
+18 "ToString" zameniti u "toString" 
+24 "Run" zameniti u "run"
+70 nepotrebno dodeljivanje privremenoj promenljivoj
+74 promeniti ime metode
+183 ukloniti return
+
+
+Testiranje osnovnih aritmetickih operacija sa celim brojevima:
+Ulaz: 1 + 1
+izlaz: 2
+
+Ulaz: 2 + 1
+izlaz: 3
+
+Ulaz:-1 + 2 
+izlaz: 1
+
+Ulaz: 2 - 4
+izalz: -2
+
+Sa decimalnim brojevima:
+
+Ulaz: 4.7 + 3.6
+izlaz: 8.3
+
+Ulaz: 7.2 - 4.5
+izlaz: 2.7
+
+Jedinicno testiranje metode Calculate:
+
+import unittest
+from calculator import Calculator
+
+class TestCalculator(unittest.TestCase):
+
+    def test_calculate(self)
+        result = Calculator.Run("2+2")
+        self.assertEqual(result, "4.0")
+
+        result = Calculator.Run("5-3")
+        self.assertEqual(result, "2.0")
+
+        result = Calculator.Run("2*3")
+        self.assertEqual(result, "6.0")
+
+        result = Calculator.Run("4/2")
+        self.assertEqual(result, "2.0")
+
+        result = Calculator.Run("5+2*3")
+        self.assertEqual(result, "11")
+
+if name == 'main':
+    unittest.main()
+
